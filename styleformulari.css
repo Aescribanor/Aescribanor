@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    display: grid;
+    gap: 15px;
+}
+
+.form-container h2 {
+    margin: 0;
+    text-align: center;
+    color: #333;
+}
+
+.form-container label {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-container textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-container .radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-container .checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form-container .checkbox input {
+    margin-right: 10px;
+}
+
+.form-container button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+    background: #0056b3;
+}
+
+nav {
+    background-color: #034946;
+    padding: 0.8rem;
+    text-align: center;
+    font-style: none;
+    color: white;
+    
+    
+}
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 0.625rem;
+    font-weight: bold;
+}

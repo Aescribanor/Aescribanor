@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari per treballadors</title>
+<link rel="stylesheet" href="styleformulari.css">
+</head>
+<body>
+    <form class="form-container" action="/submit" method="post" enctype="multipart/form-data">
+        <h2>Selecció de Treballador</h2>
+
+
+
+        <label for="Nomcognoms">Nom i Cognoms:</label>
+        <input type="text" id="cognoms" name="cognoms" required>
+
+        <label for="edat">Edat:</label>
+        <input type="number" id="edat" name="edat" min="18" required>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]" required>
+
+        <label for="color">Color preferit:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="mail">Correu electrònic:</label>
+        <input type="email" id="mail" name="mail" required>
+
+        <label for="estudis">Estudis:</label>
+        <select id="estudis" name="estudis" required>
+            <option value="">Selecciona una opció</option>
+            <option value="primaris">Primaria</option>
+            <option value="secundaris">ESO</option>
+            <option value="universitaris">Bachillerat</option>
+            <option value="universitaris">Cicle formatiu mitja</option>
+            <option value="universitaris">Cicle formatiu superior</option>
+
+
+            <option value="altres">Altres</option>
+        </select>
+
+        <label>Sexe:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="sexe" value="home" required> Home</label>
+            <label><input type="radio" name="sexe" value="dona"> Dona</label>
+        </div>
+
+        <label for="explicacio">Explicació:</label>
+        <textarea id="explicacio" name="explicacio" placeholder="Explica breument per què vols treballar amb nosaltres" required></textarea>
+
+        <div class="checkbox">
+            <input type="checkbox" id="privacitat" name="privacitat" required>
+            <label for="privacitat">Accepto la política de privacitat</label>
+        </div>
+
+        <label for="fotografia">Fotografia:</label>
+        <input type="file" id="fotografia" name="fotografia" accept="image/*" required>
+
+        <button type="submit">Enviar</button>
+        <nav>
+            <a href="index.html">Tornar a la pàgina principal</a>
+        </nav>
+    </form>
+    
+</body>
+</html>
